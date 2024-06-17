@@ -1,8 +1,8 @@
-<%@ page import="java.util.ArrayList"%>
-<%@ page import="java.util.List"%>
-<%@ page import="mrysi.beans.Departamentos"%>
-<%@ page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.List"%>
+<%@page import="mrysi.beans.Departamentos"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 
 <!DOCTYPE html>
