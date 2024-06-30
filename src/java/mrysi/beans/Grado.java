@@ -38,6 +38,10 @@ public class Grado implements Serializable {
     private Grado(Integer id, String string) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    public Grado(int i, String name, int idGrado) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
    
    public int getIdGrado(){
         return idGrado;
@@ -78,10 +82,12 @@ public class Grado implements Serializable {
         public void insert(Grado grado) throws SQLException {
              //abrir la conexion
             conn = conMySQL.getConnection();
-            String insertQuery = "INSERT INTO"+TABLE_NAME+"(nombreGrado)"+"VALUES(?)";
+            String insertQuery = "INSERT INTO"+TABLE_NAME+"(nombreGrado, idGrado"
+                    + "VALUES(?,?)";
             try(PreparedStatement ps = conn.prepareStatement(insertQuery)){
                 //enviar el comando insert
                 ps.setString(1, grado.getNombreGrado());
+                ps.setInt(2, grado.getIdEntidad());
                 ps.executeUpdate();
             }
             conn.close();
@@ -147,7 +153,7 @@ public class Grado implements Serializable {
             try(PreparedStatement ps = conn.prepareStatement(Query)){
                 //agregar parámetros y ejecutar la consulta
                 try (ResultSet rs = ps.executeQuery()){
-                    if (rs.next()){
+                    while (rs.next()){
                         //obtener cada una de las columnas y mapearlas a la clase identidad
                        Grado grado = new Grado(
                        rs.getInt("idGrado"),

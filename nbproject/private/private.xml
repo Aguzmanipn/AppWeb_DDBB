@@ -4,9 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/SebaxPC/OneDrive/Documentos/NetBeansProjects/WebAppJDBC/web/index.jsp</file>
-            <file>file:/C:/Users/SebaxPC/OneDrive/Documentos/NetBeansProjects/WebAppJDBC/src/java/mrysi/beans/Departamentos.java</file>
-            <file>file:/C:/Users/SebaxPC/OneDrive/Documentos/NetBeansProjects/WebAppJDBC/src/java/mrysi/beans/Entidad.java</file>
+            <file>file:/C:/Users/SebaxPC/OneDrive/Documentos/NetBeansProjects/WebAppJDBC/src/java/mrysi/beans/Grado.java</file>
+            <file>file:/C:/Users/SebaxPC/OneDrive/Documentos/NetBeansProjects/WebAppJDBC/web/new.jsp</file>
             <file>file:/C:/Users/SebaxPC/OneDrive/Documentos/NetBeansProjects/WebAppJDBC/src/java/mrysi/servlets/ServletEscuela.java</file>
+            <file>file:/C:/Users/SebaxPC/OneDrive/Documentos/NetBeansProjects/WebAppJDBC/src/java/mrysi/servlets/GradoLoad.java</file>
         </group>
     </open-files>
 </project-private>
